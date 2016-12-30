@@ -1,0 +1,210 @@
+body{
+	margin: 0;
+	background: #E5E5E5;
+	font-family: Calibri;
+}
+a{
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+header{
+	width: 100%;
+	background: #6494ED;
+	text-align: center;
+}
+header a{
+	display: inline-block;
+	margin: 0 -2.5px;
+	text-align: center;
+	padding: 15px;
+	width: 25%;
+	min-width: 125.75px;
+	box-sizing: border-box;
+	transition: .5s;
+	border-top: 0 solid white;
+}
+header a:hover{
+	transition: .3s;
+	border-top: 10px solid #FF726C;
+	padding-top: 5px;
+}
+.content{
+	width: 100%;
+	text-align: center;
+}
+.block{
+	background: white;
+	border-radius: 3px;
+	box-shadow: 0 2px 4px rgba(34, 25, 25, 0.4);
+	width: 20%;
+	min-width: 250px;
+	margin: 2%;
+	height: 426px;
+	overflow: hidden;
+	display: inline-block;
+	color: black;
+	overflow: hidden;
+}
+.deleted{
+	opacity: 0;
+	width: 0;
+	margin: 0;
+	min-width: 0;
+	transition: .5s;
+}
+.deleted *{
+	opacity: 0;
+	width: 0;
+	margin: 0;
+	transition: .5s;
+}
+.block img{
+	position: relative;
+	z-index: 0;
+	width: 100%;
+	transition: transform .3s linear;
+	transform: scale(1);
+}
+.block:hover img{
+	transition: transform .5s linear;
+	transform: scale(1.05);
+}
+.delete{
+	position: relative;
+	background: rgba(255,114,108,0.8);
+	color: white;
+	padding: 5px;
+	cursor: pointer;
+}
+.calc{
+	transition: .3s;
+}
+.block:hover .text{
+	margin-top: -102px;
+	transition: .5s;
+}
+.edit{
+	position: relative;
+	background: rgba(52, 152, 219,0.8);
+	color: white;
+	padding: 5px;
+}
+.text{
+	transition: .3s;
+	position: relative;
+	padding: 10px;
+	color: white;
+	background: rgba(39,174,96,0.8);
+	margin-top: -43px;
+}
+input[type=text], textarea{
+	width: 90%;
+	height: 46px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #555555;
+	vertical-align: middle;
+	background-color: #ffffff;
+	background-image: none;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+textarea{
+	min-height: 150px;
+	max-width: 90%;
+}
+input[type=text]:focus,textarea:focus{
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+input[type=text]:-moz-placeholder,textarea:-moz-placeholder{
+	color: #999999;
+}
+input[type="checkbox"]{
+	height: 25px;
+	width: 25px;
+}
+
+input[type=text]::-moz-placeholder,textarea::-moz-placeholder{
+	color: #999999;
+	opacity: 1;
+}
+
+input[type=text]:-ms-input-placeholder,textarea:-ms-input-placeholder{
+	color: #999999;
+}
+
+input[type=text]::-webkit-input-placeholder,textarea::-webkit-input-placeholder{
+	color: #999999;
+}
+.info{
+	margin-bottom: 0;
+	color: #22009C;
+}
+select, input[type=submit]{
+	height: 46px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.428571429;
+	width: 90%;
+	text-align: center;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+input[type=submit]{
+	color: white;
+	background: #FF726C;
+	margin: 15px 0;
+	border: 0;
+}
+input, textarea{
+	box-sizing:border-box;
+}
+#paginator{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 25px;
+}
+#paginator a{
+	display: inline-block;
+	padding: 10px 15px;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+	background: cornflowerblue;
+}
+.line{
+	width: 80%;
+	border-radius: 4px;
+	margin: 15px auto;
+	background: white;
+	overflow: hidden;
+	box-shadow: 0 2px 4px rgba(34, 25, 25, 0.4);
+}
+.mes{
+	text-align: left;
+	padding-left: 85px;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.comm{
+	width: 100%;
+	background: #FF726C;
+	color: white;
+	text-align: left;
+	padding-left: 35px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 15pt;
+}

@@ -1,0 +1,1 @@
+<?phpclass Str{    public static function hash($str){        $str1 = sha1($str);        $str2 = md5($str);        $str3 = substr($str2,0,4).$str1.substr($str2,28,10);        return $str1;    }   }?>
